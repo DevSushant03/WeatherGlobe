@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import logo from "/src/assets/logo.jpg";
 import { NavLink } from "react-router-dom";
 import { IoHome } from "react-icons/io5";
 import { FaBars, FaCity } from "react-icons/fa";
@@ -15,7 +16,7 @@ const Navbar = () => {
           <img
             className="logo"
             width="40px"
-            src="/src/assets/logo.jpg"
+            src={logo}
             alt="logo"
           />
           <div className=" btn f-column j-evenly">
