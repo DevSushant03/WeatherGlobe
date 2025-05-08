@@ -39,7 +39,7 @@ const WeatherApp = () => {
   }, [search]);
 
   const fetchApiData = (name) => {
-    const url = `https://api.openweathermap.org/data/2.5/forecast?q=${name}&appid=${import.meta.env.VITE_API_KEY}`;
+    const url = `https://api.openweathermap.org/data/2.5/forecast?q=${name.trimEnd()}&appid=${import.meta.env.VITE_API_KEY}`;
 
     setIsLoading(true);
 
