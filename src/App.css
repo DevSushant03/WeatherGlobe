@@ -144,7 +144,7 @@ body {
 
 .search input {
   flex: 1;
-  padding: 0.8rem;
+  padding-left: 0.8rem;
   background: transparent;
   border: none;
   color: #fff;
@@ -155,9 +155,9 @@ body {
 .search button {
   background-color: transparent;
   color: #fff;
+  margin-right: 1rem;
   border: none;
   padding: 0.8rem;
-  border-radius: 130px;
   cursor: pointer;
 }
 
