@@ -146,6 +146,7 @@ body {
   flex: 1;
   padding-left: 0.8rem;
   background: transparent;
+  width: 50%;
   border: none;
   color: #fff;
   font-size: large;
@@ -155,7 +156,6 @@ body {
 .search button {
   background-color: transparent;
   color: #fff;
-  margin-right: 1rem;
   border: none;
   padding: 0.8rem;
   cursor: pointer;
