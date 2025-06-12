@@ -90,6 +90,7 @@ const WeatherApp = () => {
             </button>
           </div>
 
+          //==========================================================================
           {apiData && (
             <div className="weather ">
               <span>
@@ -113,6 +114,7 @@ const WeatherApp = () => {
               />
             </div>
           )}
+          //==========================================================================
           <div className="hourlyData ">
             {apiData?.list.slice(0, 6).map((item, index) => (
               <span key={index}>
@@ -125,12 +127,13 @@ const WeatherApp = () => {
                 <img
                   src={`http://openweathermap.org/img/wn/${item.weather[0].icon}@2x.png`}
                   alt="clouds"
-                />
+                  />
                 <h4>{Math.round(item.main.temp - 273.15)}°C</h4>
               </span>
             ))}
           </div>
 
+          //==========================================================================
           {apiData && (
             <div className="weather-desc ">
               <h5>More about today's weather</h5>
@@ -191,6 +194,7 @@ const WeatherApp = () => {
             </div>
           )}
         </div>
+          //==========================================================================
         <div className="weaklyforcast  ">
           {apiData && (
             <div className="weakData ">
